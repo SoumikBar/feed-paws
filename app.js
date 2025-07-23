@@ -201,7 +201,7 @@ function initMobileMenu() {
             nav.style.top = '100%';
             nav.style.left = '0';
             nav.style.right = '0';
-            nav.style.background = 'white';
+            nav.style.background = 'var(--color-surface)';
             nav.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
             nav.style.borderRadius = '0 0 12px 12px';
             nav.style.padding = '20px';
