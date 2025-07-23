@@ -3,339 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed Paws Initiative - Feeding Hope, One Paw at a Time</title>
-    <meta name="description" content="Feed Paws Initiative is an NGO dedicated to feeding stray dogs and cats in Raiganj. Join us in making a difference in the lives of street animals.">
+    <title>Feed Paws Initiative - Feeding Stray Dogs with Love 🐕❤️</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-paw">🐾</div>
+            <h2>Loading Feed Paws Initiative...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
-        <nav class="nav container">
-            <div class="nav-brand">
+        <div class="container">
+            <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-heart"></i>
-                    <span>Feed Paws Initiative</span>
+                    <span class="logo-icon">🐕</span>
+                    <span class="logo-text">Feed Paws Initiative</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" data-page="home">Home 🏠</a></li>
+                        <li><a href="#work" class="nav-link" data-page="work">Our Work 🎯</a></li>
+                        <li><a href="#motive" class="nav-link" data-page="motive">Our Motive ❤️</a></li>
+                        <li><a href="#donate" class="nav-link" data-page="donate">Donate 💝</a></li>
+                        <li><a href="#volunteer" class="nav-link" data-page="volunteer">Volunteer 👥</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#impact" class="nav-link">Our Work</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#join" class="nav-link">Join Us</a></li>
-                <li><a href="#donate" class="nav-link">Donate</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-paw paw-1">🐾</div>
-            <div class="floating-paw paw-2">🐾</div>
-            <div class="floating-paw paw-3">🐾</div>
-            <div class="floating-heart heart-1">💖</div>
-            <div class="floating-heart heart-2">💖</div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">Feed Paws Initiative</span>
-                    <span class="title-tagline">Feeding Hope, One Paw at a Time</span>
-                </h1>
-                <p class="hero-description">
-                    We are dedicated to feeding stray dogs and cats in Raiganj, bringing compassion and care to the streets. Join us in making a difference in the lives of our furry friends.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#join" class="btn btn--primary btn--lg hero-btn">
-                        <i class="fas fa-hands-helping"></i>
-                        Join Our Mission
-                    </a>
-                    <a href="#donate" class="btn btn--secondary btn--lg hero-btn">
-                        <i class="fas fa-heart"></i>
-                        Donate Now
-                    </a>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-bg"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="hero-emoji">🐕</span>
+                            Feed Paws Initiative
+                            <span class="hero-emoji">❤️</span>
+                        </h1>
+                        <p class="hero-subtitle">Providing food, care, and love to stray dogs in Raiganj, West Bengal</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn--primary" onclick="showPage('work')">See Our Work 🎯</button>
+                            <button class="btn btn--secondary" onclick="showPage('motive')">Our Mission ✨</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-emojis">
+                    <span class="floating-emoji">🐕</span>
+                    <span class="floating-emoji">🥣</span>
+                    <span class="floating-emoji">❤️</span>
+                    <span class="floating-emoji">🏠</span>
+                    <span class="floating-emoji">🌟</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Our Mission</h2>
-                <p class="section-subtitle">Bringing love and nourishment to every street corner</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Our Story</h3>
-                    <p>Feed Paws Initiative was born from a simple yet powerful belief: every living being deserves love, care, and nourishment. Based in Raiganj, we work tirelessly to ensure that stray dogs and cats in our community never go hungry.</p>
-                    <p>What started as a small effort has grown into a movement of compassion. We conduct regular feeding drives, provide medical care when needed, and work towards creating a more humane society for all animals.</p>
-                    <p>Our vision extends beyond Raiganj - we dream of expanding our reach to help more animals across different regions, creating a network of care and compassion.</p>
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <div class="container">
+                    <h2 class="section-title">Our Impact So Far 📊</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🐕</div>
+                            <div class="stat-number" data-target="124">0</div>
+                            <div class="stat-label">Dogs Fed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-label">Volunteers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📍</div>
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">Location (Expanding Soon!)</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752807251/pplx_project_search_images/47109f6c20d3bc600a28ebf33df5ff97d87566fc.jpg" alt="Dog and cat eating together" class="about-img">
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Impact Section -->
-    <section id="impact" class="impact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Impact</h2>
-                <p class="section-subtitle">Making a difference, one meal at a time</p>
-            </div>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-users"></i>
+            <!-- Recent Activities -->
+            <div class="activities-section">
+                <div class="container">
+                    <h2 class="section-title">Recent Activities 📸</h2>
+                    <div class="activities-grid">
+                        <div class="activity-card">
+                            <div class="activity-image">📷</div>
+                            <h3>Daily Feeding Round</h3>
+                            <p>Our volunteers distribute food to stray dogs across Raiganj every morning</p>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-image">🏥</div>
+                            <h3>Medical Care</h3>
+                            <p>Providing medical attention and vaccination to injured and sick street dogs</p>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-image">🎓</div>
+                            <h3>Community Awareness</h3>
+                            <p>Educating the local community about animal welfare and compassionate living</p>
+                        </div>
                     </div>
-                    <div class="impact-number" data-target="12">0</div>
-                    <h3>Dedicated Volunteers</h3>
-                    <p>Compassionate individuals working together</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="impact-number" data-target="1">0</div>
-                    <h3>Active Location</h3>
-                    <p>Currently serving Raiganj, expanding soon</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="impact-number" data-target="500">0</div>
-                    <h3>Animals Fed</h3>
-                    <p>Meals provided to hungry souls</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="impact-number" data-target="30">0</div>
-                    <h3>Feeding Drives</h3>
-                    <p>Regular community outreach programs</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Feeding Drives</h2>
-                <p class="section-subtitle">Proof of our impact and dedication</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752807251/pplx_project_search_images/818ce00211311c9533dc838bc502aee723613900.jpg" alt="Volunteer feeding street dogs">
-                    <div class="gallery-overlay">
-                        <h4>Street Dog Feeding</h4>
-                        <p>Compassionate care during difficult times</p>
-                    </div>
+        <!-- Our Work Page -->
+        <section id="work" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">Our Work 🎯</h1>
+                    <p class="page-subtitle">Making a difference one paw at a time in Raiganj</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752807251/pplx_project_search_images/0ce9747e16d86d15d376a346cd2be41188e56497.jpg" alt="Feeding multiple stray dogs">
-                    <div class="gallery-overlay">
-                        <h4>Community Feeding</h4>
-                        <p>Bringing hope to multiple animals</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752807251/pplx_project_search_images/8d4a6c158503ac048f9894d93ef202c47bf4eec2.jpg" alt="Volunteer with food for stray dogs">
-                    <div class="gallery-overlay">
-                        <h4>Regular Feeding Drive</h4>
-                        <p>Consistent care and nourishment</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752569214/pplx_project_search_images/672a6a85db8fdb2388cc993c64f0a9c6831b64db.jpg" alt="Woman caring for stray dogs">
-                    <div class="gallery-overlay">
-                        <h4>Compassionate Care</h4>
-                        <p>Building trust and providing comfort</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i0.wp.com/barkindia.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-1.46.17-PM.jpeg?fit=1600%2C1600&ssl=1" alt="Multiple feeding drive scenes">
-                    <div class="gallery-overlay">
-                        <h4>Community Outreach</h4>
-                        <p>Expanding our reach and impact</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752807251/pplx_project_search_images/0853e2c3a7ad84c3f1acd11c5acad75da50256f9.jpg" alt="Volunteers with stray dogs">
-                    <div class="gallery-overlay">
-                        <h4>Team Effort</h4>
-                        <p>Working together for a common cause</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Join Us Section -->
-    <section id="join" class="join-us">
-        <div class="container">
-            <div class="join-content">
-                <div class="join-text">
-                    <h2>Join Our Mission</h2>
-                    <p>Become a part of something bigger. Your time, effort, and compassion can make a real difference in the lives of countless animals.</p>
-                    <div class="join-benefits">
-                        <div class="benefit">
-                            <i class="fas fa-heart"></i>
-                            <span>Make a direct impact</span>
+                <!-- Photo Gallery -->
+                <div class="gallery-section">
+                    <h2 class="section-title">Photo Gallery 📸</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">🐕📷</div>
+                            <p>Feeding session in progress</p>
                         </div>
-                        <div class="benefit">
-                            <i class="fas fa-users"></i>
-                            <span>Join a caring community</span>
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">🏥🐕</div>
+                            <p>Medical care for strays</p>
                         </div>
-                        <div class="benefit">
-                            <i class="fas fa-smile"></i>
-                            <span>Experience pure joy</span>
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">👥🐕</div>
+                            <p>Volunteers in action</p>
                         </div>
-                        <div class="benefit">
-                            <i class="fas fa-award"></i>
-                            <span>Gain valuable experience</span>
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">🥣❤️</div>
+                            <p>Happy dogs after meal</p>
                         </div>
                     </div>
                 </div>
-                <div class="join-action">
-                    <a href="https://surveyheart.com/form/6871f274466dd3716f2725fa" target="_blank" class="btn btn--primary btn--lg join-btn">
-                        <i class="fas fa-hands-helping"></i>
-                        Become a Volunteer
-                    </a>
-                    <p class="join-note">Fill out our simple form and start making a difference today!</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Donation Section -->
-    <section id="donate" class="donation">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Support Our Mission</h2>
-                <p class="section-subtitle">Your donation helps us feed more animals and expand our reach</p>
-            </div>
-            <div class="donation-content">
-                <div class="donation-info">
-                    <h3>Every Contribution Counts</h3>
-                    <p>Your generous donations help us buy food, provide medical care, and expand our feeding programs. Together, we can ensure no animal goes hungry.</p>
-                    <div class="donation-upi">
-                        <h4>UPI Payment</h4>
-                        <div class="upi-details">
-                            <span class="upi-id">soushthab@ptyes</span>
-                            <button class="copy-btn" onclick="copyUPI()">
-                                <i class="fas fa-copy"></i>
-                                Copy UPI ID
-                            </button>
+                <!-- Impact Stories -->
+                <div class="impact-section">
+                    <h2 class="section-title">Impact Stories 📖</h2>
+                    <div class="impact-stories">
+                        <div class="story-card">
+                            <h3>From Stray to Safe 🏠</h3>
+                            <p>"We found Max injured and malnourished. Today, he's healthy, happy, and has found a loving home through our network."</p>
+                        </div>
+                        <div class="story-card">
+                            <h3>Community Partnership 🤝</h3>
+                            <p>"Local shop owners now actively participate in our feeding program, making Raiganj a more compassionate place for all."</p>
                         </div>
                     </div>
                 </div>
-                <div class="donation-qr">
-                    <div class="qr-code">
-                        <div class="qr-placeholder">
-                            <i class="fas fa-qrcode"></i>
-                            <p>Scan QR Code</p>
-                            <p>soushthab@ptyes</p>
-                        </div>
-                    </div>
-                    <div class="donation-amounts">
-                        <button class="amount-btn" onclick="showDonationMessage(50)">₹50</button>
-                        <button class="amount-btn" onclick="showDonationMessage(100)">₹100</button>
-                        <button class="amount-btn" onclick="showDonationMessage(200)">₹200</button>
-                        <button class="amount-btn" onclick="showDonationMessage(500)">₹500</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Connect with us and stay updated on our mission</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Reach Out to Us</h3>
-                    <p>Have questions, suggestions, or want to collaborate? We'd love to hear from you!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>feedpawsinitiative@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Raiganj, West Bengal, India</span>
+                <!-- Location Map -->
+                <div class="location-section">
+                    <h2 class="section-title">Our Location 📍</h2>
+                    <div class="location-card">
+                        <div class="location-info">
+                            <h3>Currently Serving: Raiganj, West Bengal 🌟</h3>
+                            <p>We're expanding our reach to serve more areas soon!</p>
+                            <div class="location-details">
+                                <p>📍 Primary Area: Raiganj Municipality</p>
+                                <p>🎯 Daily Feeding Points: 8 locations</p>
+                                <p>⏰ Feeding Schedule: Morning & Evening</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/feedpawsinitiative?igsh=YnEyMTJxM2Y3dWxq" target="_blank" class="social-link instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61577966866049&mibextid=ZbWKwL" target="_blank" class="social-link facebook">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="mailto:feedpawsinitiative@gmail.com" class="social-link email">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
+            </div>
+        </section>
+
+        <!-- Our Motive Page -->
+        <section id="motive" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">Our Motive ❤️</h1>
+                    <p class="page-subtitle">Why we do what we do</p>
+                </div>
+
+                <!-- Mission & Vision -->
+                <div class="mission-section">
+                    <div class="mission-grid">
+                        <div class="mission-card">
+                            <h2>Our Mission 🎯</h2>
+                            <p>To provide food, care, and love to stray dogs in need, creating a compassionate community that values all living beings.</p>
+                        </div>
+                        <div class="mission-card">
+                            <h2>Our Vision 🌟</h2>
+                            <p>A world where no dog goes hungry and every street animal receives the care and respect they deserve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="values-section">
+                    <h2 class="section-title">Our Values 💎</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">❤️</div>
+                            <h3>Compassion for all animals</h3>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🤝</div>
+                            <h3>Community engagement</h3>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🔄</div>
+                            <h3>Sustainable feeding programs</h3>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">👥</div>
+                            <h3>Volunteer empowerment</h3>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🔍</div>
+                            <h3>Transparency in operations</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div class="team-section">
+                    <h2 class="section-title">Our Amazing Team 👥</h2>
+                    <div class="team-info">
+                        <div class="team-card">
+                            <h3>Our Volunteers ⭐</h3>
+                            <p>12 dedicated volunteers working tirelessly to make a difference</p>
+                            <div class="volunteer-icons">
+                                <span class="volunteer-emoji">👨‍🌾</span>
+                                <span class="volunteer-emoji">👩‍⚕️</span>
+                                <span class="volunteer-emoji">👨‍🎓</span>
+                                <span class="volunteer-emoji">👩‍💼</span>
+                                <span class="volunteer-emoji">👨‍🔧</span>
+                                <span class="volunteer-emoji">👩‍🎨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline-section">
+                    <h2 class="section-title">Our Journey 🛤️</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🌱</div>
+                            <div class="timeline-content">
+                                <h3>2024 - The Beginning</h3>
+                                <p>Started with a small group of animal lovers in Raiganj</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🚀</div>
+                            <div class="timeline-content">
+                                <h3>2025 - Growing Impact</h3>
+                                <p>Now feeding 124 dogs daily with 12 dedicated volunteers</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎯</div>
+                            <div class="timeline-content">
+                                <h3>Future - Expansion</h3>
+                                <p>Planning to expand to neighboring areas</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Donate Page -->
+        <section id="donate" class="page">
+            <div class="container">
+                <div class="coming-soon">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">🚧</div>
+                        <h1>Donation Portal Coming Soon! 💝</h1>
+                        <p>We're working hard to set up a secure donation system</p>
+                        <div class="coming-soon-features">
+                            <div class="feature">✨ Secure Payment Gateway</div>
+                            <div class="feature">📊 Transparent Fund Usage</div>
+                            <div class="feature">📧 Regular Updates</div>
+                        </div>
+                        <div class="contact-temp">
+                            <h3>In the meantime, contact us at:</h3>
+                            <p>📧 <a href="mailto:feedpawsinitiative@gmail.com">feedpawsinitiative@gmail.com</a></p>
+                        </div>
+                        <div class="newsletter-signup">
+                            <h3>Get notified when donations go live! 🔔</h3>
+                            <div class="input-group">
+                                <input type="email" placeholder="Your email address" class="form-control">
+                                <button class="btn btn--primary">Notify Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Page -->
+        <section id="volunteer" class="page">
+            <div class="container">
+                <div class="coming-soon">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">👷‍♀️</div>
+                        <h1>Volunteer Registration Coming Soon! 👥</h1>
+                        <p>We're building an amazing volunteer onboarding experience</p>
+                        
+                        <div class="volunteer-benefits">
+                            <h3>Why Volunteer With Us? 🌟</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit-item">🐕 Make a real difference in animals' lives</div>
+                                <div class="benefit-item">👥 Join a passionate community</div>
+                                <div class="benefit-item">📚 Develop new skills</div>
+                                <div class="benefit-item">🤝 Create lasting friendships</div>
+                                <div class="benefit-item">💪 Contribute to meaningful change</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-temp">
+                            <h3>Interested in volunteering?</h3>
+                            <p>📧 Contact us at: <a href="mailto:feedpawsinitiative@gmail.com">feedpawsinitiative@gmail.com</a></p>
+                            <p>📱 Follow us on Instagram for updates!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <i class="fas fa-heart"></i>
-                        <span>Feed Paws Initiative</span>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🐕</span>
+                        <span class="logo-text">Feed Paws Initiative</span>
                     </div>
-                    <p>Feeding Hope, One Paw at a Time</p>
+                    <p>Making Raiganj a better place for stray dogs, one meal at a time.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#join">Join Us</a></li>
-                        <li><a href="#donate">Donate</a></li>
+                
+                <div class="footer-section">
+                    <h3>Contact Us 📞</h3>
+                    <p>📧 <a href="mailto:feedpawsinitiative@gmail.com">feedpawsinitiative@gmail.com</a></p>
+                    <p>📍 Raiganj, West Bengal, India</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us 📱</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/feedpawsinitiative?igsh=YnEyMTJxM2Y3dWxq" target="_blank" class="social-link">
+                            📸 Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links 🔗</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#work" onclick="showPage('work')">Our Work</a></li>
+                        <li><a href="#motive" onclick="showPage('motive')">Our Motive</a></li>
+                        <li><a href="#donate" onclick="showPage('donate')">Donate</a></li>
+                        <li><a href="#volunteer" onclick="showPage('volunteer')">Volunteer</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p>feedpawsinitiative@gmail.com</p>
-                    <p>Raiganj, West Bengal</p>
-                </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 Feed Paws Initiative. Made with ❤️ for our furry friends.</p>
+                <p>&copy; 2025 Feed Paws Initiative. Made with ❤️ for stray dogs in Raiganj.</p>
             </div>
         </div>
     </footer>
