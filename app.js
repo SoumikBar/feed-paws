@@ -15,27 +15,23 @@ document.addEventListener('DOMContentLoaded', function() {
 // Loading Screen
 function initLoadingScreen() {
     const loadingScreen = document.getElementById('loading-screen');
-    const loadingProgress = document.querySelector('.loading-progress');
-    
-    // Simulate loading progress
-    let progress = 0;
-    const loadingInterval = setInterval(() => {
-        progress += Math.random() * 30;
-        if (progress >= 100) {
-            progress = 100;
-            clearInterval(loadingInterval);
-            
-            // Hide loading screen after a short delay
-            setTimeout(() => {
-                loadingScreen.classList.add('hidden');
-                
-                // Remove loading screen from DOM after transition
-                setTimeout(() => {
-                    if (loadingScreen.parentNode) {
-                        loadingScreen.parentNode.removeChild(loadingScreen);
-                    }
-                }, 300);
-                
+
+    // Wait until the full page has loaded
+    window.addEventListener("load", () => {
+        // Fade out loading screen
+        loadingScreen.classList.add('hidden');
+
+        // Remove loading screen from DOM after fade transition
+        setTimeout(() => {
+            if (loadingScreen.parentNode) {
+                loadingScreen.parentNode.removeChild(loadingScreen);
+            }
+        }, 500);
+    });
+}
+
+// Call the function
+initLoadingScreen();
                 // Trigger initial animations
                 triggerInitialAnimations();
             }, 500);
