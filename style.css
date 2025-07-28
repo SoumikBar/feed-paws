@@ -1826,3 +1826,11 @@ select.form-control {
     word-break: break-word;   /* To prevent horizontal overflow */
   }
 }
+.volunteer-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #fff;
+}
