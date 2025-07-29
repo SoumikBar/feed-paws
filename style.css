@@ -1826,11 +1826,67 @@ select.form-control {
     word-break: break-word;   /* To prevent horizontal overflow */
   }
 }
+/* Volunteer Form Styling */
 .volunteer-form-container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  color: #1a202c;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.volunteer-form-container form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.volunteer-form-container form input,
+.volunteer-form-container form select,
+.volunteer-form-container form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.volunteer-form-container form input:focus,
+.volunteer-form-container form select:focus,
+.volunteer-form-container form textarea:focus {
+  border-color: #38a169;
+  outline: none;
   background-color: #fff;
+}
+
+.volunteer-form-container form button {
+  background-color: #2f855a;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer-form-container form button:hover {
+  background-color: #276749;
+}
+
+.volunteer-form-container form input[type="file"] {
+  padding: 6px;
+}
+
+.volunteer-form-container form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
 }
