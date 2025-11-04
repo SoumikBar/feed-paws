@@ -1899,12 +1899,6 @@ select.form-control {
     gap: 10px; 
 }
 
-.logo {
-  display: flex;
-  align-items: center;  /* vertically align logo + text */
-  gap: 8px;             /* slight spacing between logo and text */
-}
-
 .logo-img {
   height: 40px;         /* smaller for better balance */
   width: auto;
