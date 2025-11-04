@@ -1892,3 +1892,15 @@ select.form-control {
   width: auto;
   margin-right: 8px;
 }
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between image and text */
+}
+
+.logo-img {
+    height: 50px;  /* adjust size as needed */
+    width: auto;
+    border-radius: 8px;
+}
