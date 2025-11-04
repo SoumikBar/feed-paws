@@ -1892,15 +1892,36 @@ select.form-control {
   width: auto;
   margin-right: 8px;
 }
-/* Logo styling */
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* space between image and text */
+    gap: 10px; 
 }
 
-.logo-img {
-    height: 50px;  /* adjust size as needed */
-    width: auto;
-    border-radius: 8px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
 }
+
+
+.logo-img {
+  height: 50px; 
+  width: auto;
+  border-radius: 8px;
+}
+
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;       
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
