@@ -1904,6 +1904,7 @@ select.form-control {
   width: auto;
   border-radius: 8px;
   vertical-align: middle;
+  margin-right: 15px;
 }
 
 .logo-text {
